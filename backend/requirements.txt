@@ -4,6 +4,6 @@ uvicorn == 0.14.0
 
 motor == 2.4.0
 
-guniorn == 20.1.0
+gunicorn == 20.1.0
 
 pymongo[srv] == 3.12.0

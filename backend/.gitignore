@@ -1,0 +1,7 @@
+.pipfile
+.pipfile.lock
+
+# pyenv
+.python-version
+
+.*.db

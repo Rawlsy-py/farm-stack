@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+import database.py
+import model.py
 
 origins = ["*"]
 
@@ -13,7 +15,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.get("/")
-def get_root():
-    return {"1":"A"}
-    
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
